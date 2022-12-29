@@ -16,5 +16,5 @@ logbook:
   format:
     style: http
 chatgpt:
-  api-key: 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   #your api-key. It can be generated in this link https://beta.openai.com/docs/quickstart/adjust-your-settings
+  api-key: ${API_KEY}
   max-tokens: 1000

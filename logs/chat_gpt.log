@@ -247,3 +247,14 @@ user-agent: PostmanRuntime/7.29.2
 2022-12-29 01:49:29,219 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-2] response: <200,ChatResponse(id=cmpl-6SbOoY0ICc5TMf4NbTyAGf7spMSQW, object=text_completion, created=+4580503-05-08, model=text-davinci-003, choices=[Choice(text=
 
 3 + 3 = 6, index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=7, completionTokens=7, totalTokens=14)),[Date:"Thu, 29 Dec 2022 00:49:26 GMT", Content-Type:"application/json", Content-Length:"273", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"725", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"dc72952ab9148707b7f7ce7d2df7c756"]>
+2022-12-29 01:49:29,246 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-2] Outgoing Response: 91fc773c12d4f37c
+Duration: 1694 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 29 Dec 2022 00:49:29 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"\n\n3 + 3 = 6"}
