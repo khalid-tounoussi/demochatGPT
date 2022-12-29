@@ -1,4 +1,4 @@
-package com.dosi.controller.dto;
+package com.dosi.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

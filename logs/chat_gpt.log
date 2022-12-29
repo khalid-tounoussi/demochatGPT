@@ -114,3 +114,56 @@ Transfer-Encoding: chunked
 Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 
 {"code":200,"message":"success","data":"\n\nThe weather in Brest is usually mild and temperate. In summer, temperatures range from around 15°C (59°F) to 25°C (77°F). In winter, temperatures range from around 5°C (41°F) to 10°C (50°F). Rainfall is fairly evenly distributed throughout the year, with the wettest months being October and November."}
+2022-12-29 01:31:22,803 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-2] Incoming Request: 986d625d1dd2f0a2
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 61
+content-type: application/json
+host: localhost:8080
+postman-token: 446e1a0c-7360-4029-95be-6a109a8e6377
+user-agent: PostmanRuntime/7.29.2
+
+{"message":"hello , how is the weather in brest ?"}
+2022-12-29 01:31:22,803 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-2] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hello , how is the weather in brest ?, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-29 01:31:23,465 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-2] Outgoing Response: 986d625d1dd2f0a2
+Duration: 662 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 29 Dec 2022 00:31:23 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"401 Unauthorized: [no body]"}
+2022-12-29 01:31:29,836 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-6] Incoming Request: 827628a784bf8cc9
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 61
+content-type: application/json
+host: localhost:8080
+postman-token: 8a5a8028-e7bb-4a98-9169-a89c0f788cd6
+user-agent: PostmanRuntime/7.29.2
+
+{"message":"hello , how is the weather in brest ?"}
+2022-12-29 01:31:29,838 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-6] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hello , how is the weather in brest ?, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-29 01:31:33,272 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-6] response: <200,ChatResponse(id=cmpl-6Sb7POag3uPNjf7EqhpqlcwzqWIgi, object=text_completion, created=+4580500-05-24, model=text-davinci-003, choices=[Choice(text=
+
+The weather in Brest is usually mild and temperate. In summer, temperatures range from around 15°C (59°F) to 25°C (77°F). In winter, temperatures range from around 5°C (41°F) to 10°C (50°F). Rainfall is fairly evenly distributed throughout the year, with the wettest months being October and November., index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=10, completionTokens=83, totalTokens=93)),[Date:"Thu, 29 Dec 2022 00:31:30 GMT", Content-Type:"application/json", Transfer-Encoding:"chunked", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"2947", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"03b773e09f90d2eb0459d0aac4236c59"]>
+2022-12-29 01:31:33,272 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-6] Outgoing Response: 827628a784bf8cc9
+Duration: 3437 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 29 Dec 2022 00:31:33 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"\n\nThe weather in Brest is usually mild and temperate. In summer, temperatures range from around 15°C (59°F) to 25°C (77°F). In winter, temperatures range from around 5°C (41°F) to 10°C (50°F). Rainfall is fairly evenly distributed throughout the year, with the wettest months being October and November."}
