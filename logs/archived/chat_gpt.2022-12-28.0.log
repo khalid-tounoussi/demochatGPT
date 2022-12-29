@@ -1,0 +1,483 @@
+2022-12-28 22:03:29,646 INFO cc.vayne.Application [main] Starting Application using Java 17.0.5 on DESKTOP-BRPE7R0 with PID 1808 (C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master)
+2022-12-28 22:03:29,649 DEBUG cc.vayne.Application [main] Running with Spring Boot v2.6.8, Spring v5.3.20
+2022-12-28 22:03:29,650 INFO cc.vayne.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 22:03:30,468 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-12-28 22:03:30,479 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-12-28 22:03:30,480 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-12-28 22:03:30,600 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-12-28 22:03:30,601 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 910 ms
+2022-12-28 22:03:30,868 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2022-12-28 22:03:30,990 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-28 22:03:31,003 INFO cc.vayne.Application [main] Started Application in 1.853 seconds (JVM running for 2.456)
+2022-12-28 22:04:07,218 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 22:04:07,219 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-28 22:04:07,220 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-12-28 22:04:07,306 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Incoming Request: a51e6e6b3a097f53
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/send?message=hello HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9,fr;q=0.8
+connection: keep-alive
+cookie: Idea-8296eef2=12fbf0ae-0a64-437f-94da-373b311af0db
+host: localhost:8080
+sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+2022-12-28 22:04:07,332 INFO cc.vayne.controller.Controller [http-nio-8080-exec-1] requestId fc3e4f05-f673-43a9-a455-7ff6a8c77fa0, ip 0:0:0:0:0:0:0:1, send a message : hello
+2022-12-28 22:04:07,345 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hello, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-28 22:04:10,281 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] response: <200,ChatResponse(id=cmpl-6SXslErbIVGUi6HQbah74frOKqHu1, object=text_completion, created=+4580466-05-02, model=text-davinci-003, choices=[Choice(text=
+
+Hi there! How can I help you?, index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=1, completionTokens=11, totalTokens=12)),[Date:"Wed, 28 Dec 2022 21:04:07 GMT", Content-Type:"application/json", Content-Length:"294", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"843", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"6eb1fc7a7d95c958f9392dfb96cfa29e"]>
+2022-12-28 22:04:10,281 INFO cc.vayne.controller.Controller [http-nio-8080-exec-1] requestId fc3e4f05-f673-43a9-a455-7ff6a8c77fa0, ip 0:0:0:0:0:0:0:1, get a reply : 
+
+Hi there! How can I help you?
+2022-12-28 22:04:10,302 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Outgoing Response: a51e6e6b3a097f53
+Duration: 3069 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Dec 2022 21:04:10 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"\n\nHi there! How can I help you?"}
+2022-12-28 22:04:10,476 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-4] Incoming Request: b418caf4ceb1e5be
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/favicon.ico HTTP/1.1
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9,fr;q=0.8
+connection: keep-alive
+cookie: Idea-8296eef2=12fbf0ae-0a64-437f-94da-373b311af0db
+host: localhost:8080
+referer: http://localhost:8080/send?message=hello
+sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: image
+sec-fetch-mode: no-cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+2022-12-28 22:04:10,483 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-4] Outgoing Response: b418caf4ceb1e5be
+Duration: 6 ms
+HTTP/1.1 404 Not Found
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2022-12-28 22:08:11,629 INFO cc.vayne.Application [main] Starting Application using Java 17.0.5 on DESKTOP-BRPE7R0 with PID 32744 (C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master)
+2022-12-28 22:08:11,632 DEBUG cc.vayne.Application [main] Running with Spring Boot v2.6.8, Spring v5.3.20
+2022-12-28 22:08:11,633 INFO cc.vayne.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 22:08:12,717 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-12-28 22:08:12,732 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-12-28 22:08:12,732 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-12-28 22:08:12,833 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-12-28 22:08:12,834 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1155 ms
+2022-12-28 22:08:13,084 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2022-12-28 22:08:13,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-28 22:08:13,186 INFO cc.vayne.Application [main] Started Application in 2.159 seconds (JVM running for 2.837)
+2022-12-28 22:09:59,676 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 22:09:59,676 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-28 22:09:59,678 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-12-28 22:09:59,750 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Incoming Request: aaff8192366145c1
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 59
+content-type: text/plain
+host: localhost:8080
+postman-token: 4fd167ec-a85e-4fc6-8316-cdefc1bc0dd8
+user-agent: PostmanRuntime/7.29.2
+
+{
+    message : "hello , how is the weather in brest ?"
+}
+2022-12-28 22:09:59,797 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=null, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-28 22:10:08,433 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] response: <200,ChatResponse(id=cmpl-6SXyQ7eMGTJZprS1r31d1rxm7DOhP, object=text_completion, created=+4580467-04-18, model=text-davinci-003, choices=[Choice(text=package com.example.demo.controller;
+
+import com.example.demo.model.User;
+import com.example.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("/all")
+    public List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
+    @PostMapping("/add")
+    public void addUser(@RequestBody User user){
+        userService.addUser(user);
+    }
+
+    @PutMapping("/update")
+    public void updateUser(@RequestBody User user){
+        userService.updateUser(user);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable int id){
+        userService.deleteUser(id);
+    }
+
+}, index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=1, completionTokens=264, totalTokens=265)),[Date:"Wed, 28 Dec 2022 21:10:06 GMT", Content-Type:"application/json", Content-Length:"1170", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"7641", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"53e351836b157ddff86533e3964ad4f9"]>
+2022-12-28 22:10:08,464 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Outgoing Response: aaff8192366145c1
+Duration: 8759 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Dec 2022 21:10:08 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"package com.example.demo.controller;\n\nimport com.example.demo.model.User;\nimport com.example.demo.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.List;\n\n@RestController\n@RequestMapping(\"/user\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @GetMapping(\"/all\")\n    public List<User> getAllUsers(){\n        return userService.getAllUsers();\n    }\n\n    @PostMapping(\"/add\")\n    public void addUser(@RequestBody User user){\n        userService.addUser(user);\n    }\n\n    @PutMapping(\"/update\")\n    public void updateUser(@RequestBody User user){\n        userService.updateUser(user);\n    }\n\n    @DeleteMapping(\"/delete/{id}\")\n    public void deleteUser(@PathVariable int id){\n        userService.deleteUser(id);\n    }\n\n}"}
+2022-12-28 22:10:51,790 INFO com.dosi.Application [main] Starting Application using Java 17.0.5 on DESKTOP-BRPE7R0 with PID 13352 (C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master)
+2022-12-28 22:10:51,793 INFO com.dosi.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 22:10:52,468 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-12-28 22:10:52,475 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-12-28 22:10:52,476 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-12-28 22:10:52,581 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-12-28 22:10:52,582 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 747 ms
+2022-12-28 22:10:52,832 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2022-12-28 22:10:52,915 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-28 22:10:52,924 INFO com.dosi.Application [main] Started Application in 1.621 seconds (JVM running for 2.12)
+2022-12-28 22:10:56,850 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 22:10:56,851 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-28 22:10:56,852 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2022-12-28 22:10:56,889 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Incoming Request: 992d56a1212594e6
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 59
+content-type: text/plain
+host: localhost:8080
+postman-token: 59329abd-901d-4f80-a9e3-6851caf3ef9d
+user-agent: PostmanRuntime/7.29.2
+
+{
+    message : "hello , how is the weather in brest ?"
+}
+2022-12-28 22:10:56,911 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=null, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-28 22:11:06,671 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] response: <200,ChatResponse(id=cmpl-6SXzLIMOemMNX4kNu3V0gpyty1Yve, object=text_completion, created=+4580467-06-14, model=text-davinci-003, choices=[Choice(text=package com.example.demo.controller;
+
+import com.example.demo.model.User;
+import com.example.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("/all")
+    public List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
+    @PostMapping("/add")
+    public void addUser(@RequestBody User user){
+        userService.addUser(user);
+    }
+
+    @PutMapping("/update")
+    public void updateUser(@RequestBody User user){
+        userService.updateUser(user);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable int id){
+        userService.deleteUser(id);
+    }
+
+}, index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=1, completionTokens=264, totalTokens=265)),[Date:"Wed, 28 Dec 2022 21:11:04 GMT", Content-Type:"application/json", Content-Length:"1170", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"9028", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"b6b4593850fb6153e93d5d534dca6609"]>
+2022-12-28 22:11:06,699 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Outgoing Response: 992d56a1212594e6
+Duration: 9830 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Dec 2022 21:11:06 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"package com.example.demo.controller;\n\nimport com.example.demo.model.User;\nimport com.example.demo.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.List;\n\n@RestController\n@RequestMapping(\"/user\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @GetMapping(\"/all\")\n    public List<User> getAllUsers(){\n        return userService.getAllUsers();\n    }\n\n    @PostMapping(\"/add\")\n    public void addUser(@RequestBody User user){\n        userService.addUser(user);\n    }\n\n    @PutMapping(\"/update\")\n    public void updateUser(@RequestBody User user){\n        userService.updateUser(user);\n    }\n\n    @DeleteMapping(\"/delete/{id}\")\n    public void deleteUser(@PathVariable int id){\n        userService.deleteUser(id);\n    }\n\n}"}
+2022-12-28 22:11:45,662 INFO com.dosi.Application [main] Starting Application using Java 17.0.5 on DESKTOP-BRPE7R0 with PID 27164 (C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master)
+2022-12-28 22:11:45,664 INFO com.dosi.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 22:11:46,821 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-12-28 22:11:46,842 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-12-28 22:11:46,843 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-12-28 22:11:46,991 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-12-28 22:11:46,991 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1272 ms
+2022-12-28 22:11:47,358 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2022-12-28 22:11:47,551 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-28 22:11:47,563 INFO com.dosi.Application [main] Started Application in 2.587 seconds (JVM running for 3.379)
+2022-12-28 22:11:50,753 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 22:11:50,755 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-28 22:11:50,756 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-12-28 22:11:50,797 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Incoming Request: c1fe67ed403b0d92
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 59
+content-type: text/plain
+host: localhost:8080
+postman-token: 5520b823-f39e-47c8-ae89-8ed61bdbdcc4
+user-agent: PostmanRuntime/7.29.2
+
+{
+    message : "hello , how is the weather in brest ?"
+}
+2022-12-28 22:11:50,822 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=null, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-28 22:12:00,332 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] response: <200,ChatResponse(id=cmpl-6SY0DRdjk2321PEbXbLjapzeXalO1, object=text_completion, created=+4580467-08-07, model=text-davinci-003, choices=[Choice(text=package com.example.demo.controller;
+
+import com.example.demo.model.User;
+import com.example.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("/all")
+    public List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
+    @PostMapping("/add")
+    public void addUser(@RequestBody User user){
+        userService.addUser(user);
+    }
+
+    @PutMapping("/update")
+    public void updateUser(@RequestBody User user){
+        userService.updateUser(user);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable int id){
+        userService.deleteUser(id);
+    }
+
+}, index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=1, completionTokens=264, totalTokens=265)),[Date:"Wed, 28 Dec 2022 21:11:57 GMT", Content-Type:"application/json", Content-Length:"1170", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"8709", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"82145bfa1213b2e2606657d2633eb2cd"]>
+2022-12-28 22:12:00,347 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Outgoing Response: c1fe67ed403b0d92
+Duration: 9574 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Dec 2022 21:12:00 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"package com.example.demo.controller;\n\nimport com.example.demo.model.User;\nimport com.example.demo.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.List;\n\n@RestController\n@RequestMapping(\"/user\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @GetMapping(\"/all\")\n    public List<User> getAllUsers(){\n        return userService.getAllUsers();\n    }\n\n    @PostMapping(\"/add\")\n    public void addUser(@RequestBody User user){\n        userService.addUser(user);\n    }\n\n    @PutMapping(\"/update\")\n    public void updateUser(@RequestBody User user){\n        userService.updateUser(user);\n    }\n\n    @DeleteMapping(\"/delete/{id}\")\n    public void deleteUser(@PathVariable int id){\n        userService.deleteUser(id);\n    }\n\n}"}
+2022-12-28 22:12:34,391 INFO com.dosi.Application [main] Starting Application using Java 17.0.5 on DESKTOP-BRPE7R0 with PID 6372 (C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master)
+2022-12-28 22:12:34,394 INFO com.dosi.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 22:12:35,067 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-12-28 22:12:35,074 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-12-28 22:12:35,074 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-12-28 22:12:35,168 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-12-28 22:12:35,169 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 740 ms
+2022-12-28 22:12:35,413 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2022-12-28 22:12:35,495 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-28 22:12:35,505 INFO com.dosi.Application [main] Started Application in 1.575 seconds (JVM running for 2.049)
+2022-12-28 22:12:39,404 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 22:12:39,406 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2022-12-28 22:12:39,406 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] Completed initialization in 0 ms
+2022-12-28 22:12:39,460 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-6] Incoming Request: 8f0e3169b5a8b8f7
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 59
+content-type: text/plain
+host: localhost:8080
+postman-token: 15569f57-a78e-4aa5-a6e4-441504e2b160
+user-agent: PostmanRuntime/7.29.2
+
+{
+    message : "hello , how is the weather in brest ?"
+}
+2022-12-28 22:12:39,485 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-6] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=null, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-28 22:12:48,282 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-6] response: <200,ChatResponse(id=cmpl-6SY10mG5acMN0kAYFuLqKZpNJfgQi, object=text_completion, created=+4580467-09-25, model=text-davinci-003, choices=[Choice(text=package com.example.demo.controller;
+
+import com.example.demo.model.User;
+import com.example.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("/all")
+    public List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
+    @PostMapping("/add")
+    public void addUser(@RequestBody User user){
+        userService.addUser(user);
+    }
+
+    @PutMapping("/update")
+    public void updateUser(@RequestBody User user){
+        userService.updateUser(user);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable int id){
+        userService.deleteUser(id);
+    }
+
+}, index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=1, completionTokens=264, totalTokens=265)),[Date:"Wed, 28 Dec 2022 21:12:45 GMT", Content-Type:"application/json", Content-Length:"1170", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"7944", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"fb5ac4cd5daa6c05c1af64ae599769de"]>
+2022-12-28 22:12:48,301 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-6] Outgoing Response: 8f0e3169b5a8b8f7
+Duration: 8861 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Dec 2022 21:12:48 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"package com.example.demo.controller;\n\nimport com.example.demo.model.User;\nimport com.example.demo.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.web.bind.annotation.*;\n\nimport java.util.List;\n\n@RestController\n@RequestMapping(\"/user\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @GetMapping(\"/all\")\n    public List<User> getAllUsers(){\n        return userService.getAllUsers();\n    }\n\n    @PostMapping(\"/add\")\n    public void addUser(@RequestBody User user){\n        userService.addUser(user);\n    }\n\n    @PutMapping(\"/update\")\n    public void updateUser(@RequestBody User user){\n        userService.updateUser(user);\n    }\n\n    @DeleteMapping(\"/delete/{id}\")\n    public void deleteUser(@PathVariable int id){\n        userService.deleteUser(id);\n    }\n\n}"}
+2022-12-28 22:13:43,526 INFO com.dosi.Application [main] Starting Application using Java 17.0.5 on DESKTOP-BRPE7R0 with PID 21548 (C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master\target\classes started by Administrator in C:\Users\Administrator\Desktop\UBO\Outside\demo-chatgpt-spring-boot-starter-master\demo-chatgpt-spring-boot-starter-master)
+2022-12-28 22:13:43,529 INFO com.dosi.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 22:13:44,215 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-12-28 22:13:44,224 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-12-28 22:13:44,224 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-12-28 22:13:44,314 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-12-28 22:13:44,315 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 746 ms
+2022-12-28 22:13:44,547 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2022-12-28 22:13:44,629 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-28 22:13:44,638 INFO com.dosi.Application [main] Started Application in 1.504 seconds (JVM running for 2.023)
+2022-12-28 22:13:48,612 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-7] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 22:13:48,613 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-7] Initializing Servlet 'dispatcherServlet'
+2022-12-28 22:13:48,614 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-7] Completed initialization in 0 ms
+2022-12-28 22:13:48,658 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-7] Incoming Request: 90693509576623c2
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 59
+content-type: text/plain
+host: localhost:8080
+postman-token: 27981722-2ab2-4332-8608-7418126ffd5a
+user-agent: PostmanRuntime/7.29.2
+
+{
+    message : "hello , how is the weather in brest ?"
+}
+2022-12-28 22:13:48,682 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2022-12-28 22:13:48,686 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-7] Outgoing Response: 90693509576623c2
+Duration: 52 ms
+HTTP/1.1 415 Unsupported Media Type
+Accept: application/json, application/*+json
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2022-12-28 22:14:40,535 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-3] Incoming Request: 8bd0c3367af09b3d
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: application/json
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 59
+content-type: text/plain
+host: localhost:8080
+postman-token: 6ace127b-dc10-4cf9-8c13-d4a18ded4248
+user-agent: PostmanRuntime/7.29.2
+
+{
+    message : "hello , how is the weather in brest ?"
+}
+2022-12-28 22:14:40,536 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2022-12-28 22:14:40,538 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-3] Outgoing Response: 8bd0c3367af09b3d
+Duration: 2 ms
+HTTP/1.1 415 Unsupported Media Type
+Accept: application/json, application/*+json
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2022-12-28 22:15:10,918 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-5] Incoming Request: e04c46fea7bd1889
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: application/json
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 199
+content-type: multipart/form-data; boundary=--------------------------753781886209934149480439
+host: localhost:8080
+postman-token: eb598e3f-64bd-4d6d-80aa-1b7b167e15e5
+user-agent: PostmanRuntime/7.29.2
+
+<multipart>
+2022-12-28 22:15:10,940 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------753781886209934149480439;charset=UTF-8' not supported]
+2022-12-28 22:15:10,941 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-5] Outgoing Response: e04c46fea7bd1889
+Duration: 25 ms
+HTTP/1.1 415 Unsupported Media Type
+Accept: application/json, application/*+json
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2022-12-28 22:16:37,509 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Incoming Request: 8287111863217a09
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/send HTTP/1.1
+accept: application/json
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 61
+content-type: application/json
+host: localhost:8080
+postman-token: b943f365-6941-4554-840b-375c3607b442
+user-agent: PostmanRuntime/7.29.2
+
+{"message":"hello , how is the weather in brest ?"}
+2022-12-28 22:16:37,541 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hello , how is the weather in brest ?, maxTokens=1000, temperature=0.0, topP=1.0),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2022-12-28 22:16:41,415 INFO io.github.flashvayne.chatgpt.service.impl.DefaultChatgptService [http-nio-8080-exec-1] response: <200,ChatResponse(id=cmpl-6SY4q5mbnvOKsWFs4wfKYaMVvRUwe, object=text_completion, created=+4580468-05-20, model=text-davinci-003, choices=[Choice(text=
+
+The weather in Brest is usually mild and temperate. In summer, temperatures range from around 15°C (59°F) to 25°C (77°F). In winter, temperatures range from around 5°C (41°F) to 10°C (50°F). Rainfall is fairly evenly distributed throughout the year, with the wettest months being October and November., index=0, logprobs=null, finishReason=stop)], usage=Usage(promptTokens=10, completionTokens=83, totalTokens=93)),[Date:"Wed, 28 Dec 2022 21:16:39 GMT", Content-Type:"application/json", Transfer-Encoding:"chunked", Connection:"keep-alive", Access-Control-Allow-Origin:"*", Cache-Control:"no-cache, must-revalidate", Openai-Model:"text-davinci-003", Openai-Organization:"user-mnh6axf9rrduqtw2kmkes0h7", Openai-Processing-Ms:"3163", Openai-Version:"2020-10-01", Strict-Transport-Security:"max-age=15724800; includeSubDomains", X-Request-Id:"f024f11c6d0ad372f6f790bb8d7fd90f"]>
+2022-12-28 22:16:41,426 TRACE org.zalando.logbook.Logbook [http-nio-8080-exec-1] Outgoing Response: 8287111863217a09
+Duration: 3922 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Dec 2022 21:16:41 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":200,"message":"success","data":"\n\nThe weather in Brest is usually mild and temperate. In summer, temperatures range from around 15°C (59°F) to 25°C (77°F). In winter, temperatures range from around 5°C (41°F) to 10°C (50°F). Rainfall is fairly evenly distributed throughout the year, with the wettest months being October and November."}

@@ -17,6 +17,11 @@ public class Controller {
 
     @PostMapping("/send")
     public ResponseModel send(@RequestBody Message message) {
+        System.out.println("******************");
+        System.out.println(message);
+        System.out.println(message.getMessage());
+        System.out.println("******************");
+
         try {
             String responseMessage = chatgptService.sendMessage(message.getMessage());
             return ResponseModel.success(responseMessage);
